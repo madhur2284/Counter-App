@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color:lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 20px;
+}
+
+#container{
+    background-color:darkorange;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 6px 2px darkgreen;
+    animation-name: breath;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes breath{
+    from{
+        transform: scale(1);
+        box-shadow: 2px 2px 6px 2px darkgreen;
+    }
+    to{
+        transform: scale(1.01);
+        box-shadow: 3px 3px 8px 3px darkgreen;
+    }
+}
+
+
+
+button{
+    height: 40px;
+    width: 70px;
+    background-color: slateblue;
+    margin: 20px;
+    font-size: 20px;
+}
+
+button:hover{
+    height: 44px;
+    width: 74px;
+    background-color:blueviolet;
+}
